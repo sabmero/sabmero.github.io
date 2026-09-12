@@ -1,274 +1,1710 @@
 <!DOCTYPE html>
-<html lang="ne">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SabMero — Everything You Need. One App. | Nepal Shopping & Home Services</title>
-<meta name="description" content="SabMero le Nepal ma shopping ra ghar/office ka lagi trusted home services (electrical, plumbing, CCTV) euta app bhitra dinchha. Download garnuhos ra suvidha anubhav garnuhos.">
-<style>
-  :root{
-    --orange:#F7941D;
-    --navy:#0B1F3A;
-    --navy-light:#16305A;
-    --bg:#FAFAFA;
-    --white:#FFFFFF;
-  }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  body{
-    font-family:'Segoe UI',Arial,sans-serif;
-    background:var(--bg);
-    color:var(--navy);
-    line-height:1.6;
-  }
-  a{text-decoration:none;}
-  img{max-width:100%;display:block;}
+    <meta charset="UTF-8">
 
-  /* Header */
-  header{
-    background:var(--navy);
-    padding:16px 20px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-  }
-  .logo{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    color:var(--white);
-    font-weight:700;
-    font-size:20px;
-  }
-  .logo img{
-    width:36px;height:36px;
-    border-radius:8px;
-  }
-  header nav a{
-    color:var(--white);
-    margin-left:20px;
-    font-size:15px;
-  }
+    <!-- Mobile Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  /* Hero */
-  .hero{
-    background:linear-gradient(135deg,var(--navy) 0%,var(--navy-light) 100%);
-    color:var(--white);
-    padding:60px 20px 80px;
-    text-align:center;
-  }
-  .hero h1{
-    font-size:32px;
-    margin-bottom:16px;
-    line-height:1.3;
-  }
-  .hero h1 span{color:var(--orange);}
-  .hero p{
-    font-size:17px;
-    max-width:480px;
-    margin:0 auto 28px;
-    color:#D8DEEA;
-  }
-  .cta-group{
-    display:flex;
-    gap:12px;
-    justify-content:center;
-    flex-wrap:wrap;
-  }
-  .btn{
-    display:inline-block;
-    padding:14px 26px;
-    border-radius:30px;
-    font-weight:600;
-    font-size:15px;
-  }
-  .btn-primary{
-    background:var(--orange);
-    color:var(--white);
-  }
-  .btn-secondary{
-    background:transparent;
-    color:var(--white);
-    border:2px solid var(--white);
-  }
+    <!-- SEO -->
+    <title>SabMero – Online Shopping & Home Services in Nepal</title>
 
-  /* Section common */
-  section{
-    padding:50px 20px;
-    max-width:960px;
-    margin:0 auto;
-  }
-  .section-title{
-    text-align:center;
-    font-size:26px;
-    margin-bottom:10px;
-    color:var(--navy);
-  }
-  .section-sub{
-    text-align:center;
-    color:#666;
-    margin-bottom:36px;
-    font-size:15px;
-  }
+    <meta name="description"
+          content="Shop products and book trusted home services in Kathmandu, Bhaktapur & Lalitpur with SabMero. Find CCTV, electrical, plumbing, networking, repair and more in one app.">
 
-  /* Features grid */
-  .grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-  }
-  .card{
-    background:var(--white);
-    border-radius:14px;
-    padding:26px 20px;
-    box-shadow:0 4px 14px rgba(11,31,58,0.06);
-    text-align:center;
-  }
-  .card .emoji{
-    font-size:32px;
-    margin-bottom:12px;
-  }
-  .card h3{
-    font-size:17px;
-    margin-bottom:8px;
-    color:var(--navy);
-  }
-  .card p{
-    font-size:14px;
-    color:#666;
-  }
+    <meta name="keywords"
+          content="SabMero, Sab Mero, online shopping Nepal, marketplace Nepal, home services Kathmandu, home services Lalitpur, home services Bhaktapur, CCTV service Kathmandu, electrician Kathmandu, plumber Kathmandu, electrical service Nepal, plumbing Nepal">
 
-  /* Why us */
-  .why-list{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:16px;
-  }
-  .why-item{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    background:var(--white);
-    padding:14px 16px;
-    border-radius:10px;
-    font-size:14px;
-    font-weight:600;
-  }
-  .why-item .check{color:var(--orange);font-weight:900;}
+    <meta name="author" content="SabMero">
 
-  /* Download CTA band */
-  .download-band{
-    background:var(--orange);
-    color:var(--white);
-    text-align:center;
-    padding:50px 20px;
-  }
-  .download-band h2{
-    font-size:26px;
-    margin-bottom:14px;
-  }
-  .download-band p{
-    margin-bottom:26px;
-    font-size:15px;
-  }
-  .download-band .btn-primary{
-    background:var(--navy);
-  }
-  .download-band .btn-secondary{
-    border-color:var(--white);
-  }
+    <!-- Search Engine -->
+    <meta name="robots" content="index, follow">
 
-  /* Footer */
-  footer{
-    background:var(--navy);
-    color:#B9C2D6;
-    text-align:center;
-    padding:30px 20px;
-    font-size:13px;
-  }
-  footer .logo{justify-content:center;margin-bottom:12px;}
-  footer a{color:#B9C2D6;}
-</style>
+    <!-- Canonical -->
+    <link rel="canonical" href="https://sabmero.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+          content="SabMero – Everything You Need. One App.">
+
+    <meta property="og:description"
+          content="Shop products, book services and connect with local businesses through SabMero.">
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:url" content="https://sabmero.com/">
+
+    <meta property="og:site_name" content="SabMero">
+
+    <meta property="og:image" content="https://sabmero.com/logo.png">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#1A3C6E">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png" type="image/png">
+
+    <!-- Font Awesome (for social brand icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+
+        /* ==============================
+           GLOBAL
+        ============================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Arial,
+                sans-serif;
+
+            color: #2D2D2D;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1180px;
+            margin: auto;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 34px;
+            color: #1A3C6E;
+            margin-bottom: 12px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            max-width: 680px;
+            margin: 0 auto 45px;
+            color: #666;
+            font-size: 16px;
+        }
+
+        /* ==============================
+           HEADER
+        ============================== */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,0.97);
+            border-bottom: 1px solid #eee;
+        }
+
+        .navbar {
+            min-height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 25px;
+            font-weight: 800;
+            color: #1A3C6E;
+        }
+
+        .logo img {
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 26px;
+        }
+
+        nav a {
+            font-size: 15px;
+            font-weight: 600;
+            color: #444;
+            transition: 0.2s;
+        }
+
+        nav a:hover {
+            color: #1A3C6E;
+        }
+
+        .nav-button {
+            background: #1A3C6E;
+            color: #fff !important;
+            padding: 10px 17px;
+            border-radius: 8px;
+        }
+
+        /* ==============================
+           HERO
+        ============================== */
+
+        .hero {
+            background:
+                linear-gradient(
+                    180deg,
+                    #f4f8fc 0%,
+                    #ffffff 100%
+                );
+
+            padding: 95px 0 85px;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .hero-content h1 {
+            font-size: 58px;
+            line-height: 1.08;
+            color: #1A3C6E;
+            margin-bottom: 22px;
+            letter-spacing: -1px;
+        }
+
+        .hero-content h1 span {
+            color: #2D2D2D;
+        }
+
+        .hero-content p {
+            font-size: 19px;
+            color: #5f5f5f;
+            max-width: 620px;
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 48px;
+            padding: 0 23px;
+            border-radius: 9px;
+            font-weight: 700;
+            transition: 0.2s;
+        }
+
+        .btn-primary {
+            background: #1A3C6E;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background: #102e57;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            border: 1.5px solid #1A3C6E;
+            color: #1A3C6E;
+            background: #fff;
+        }
+
+        .btn-secondary:hover {
+            background: #f1f5fa;
+        }
+
+        .hero-card {
+            background: #fff;
+            border-radius: 22px;
+            padding: 30px;
+            box-shadow: 0 15px 50px rgba(26,60,110,0.12);
+            border: 1px solid #edf1f5;
+        }
+
+        .hero-card-title {
+            font-size: 22px;
+            font-weight: 800;
+            color: #1A3C6E;
+            margin-bottom: 22px;
+        }
+
+        .quick-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .quick-item:last-child {
+            border-bottom: none;
+        }
+
+        .quick-icon {
+            width: 45px;
+            height: 45px;
+            background: #eef4fb;
+            color: #1A3C6E;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .quick-item strong {
+            display: block;
+            color: #333;
+        }
+
+        .quick-item small {
+            color: #777;
+        }
+
+        /* ==============================
+           INTRO
+        ============================== */
+
+        .intro {
+            text-align: center;
+        }
+
+        .intro-text {
+            max-width: 800px;
+            margin: auto;
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* ==============================
+           CATEGORY CARDS
+        ============================== */
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .category-card {
+            background: #fff;
+            border: 1px solid #e8edf2;
+            border-radius: 15px;
+            padding: 28px 20px;
+            text-align: center;
+            transition: 0.25s;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.07);
+            border-color: #d8e3ef;
+        }
+
+        .category-icon {
+            width: 58px;
+            height: 58px;
+            border-radius: 14px;
+            background: #eef4fb;
+            color: #1A3C6E;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+        }
+
+        .category-card h3 {
+            color: #1A3C6E;
+            margin-bottom: 6px;
+            font-size: 18px;
+        }
+
+        .category-card p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* ==============================
+           SERVICES
+        ============================== */
+
+        .services {
+            background: #f7f9fc;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .service-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 28px;
+            border: 1px solid #e8edf2;
+        }
+
+        .service-card h3 {
+            color: #1A3C6E;
+            margin-bottom: 9px;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 15px;
+        }
+
+        /* ==============================
+           HOW IT WORKS
+        ============================== */
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+        }
+
+        .step {
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        .step-number {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background: #1A3C6E;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 18px;
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+        .step h3 {
+            color: #1A3C6E;
+            margin-bottom: 8px;
+        }
+
+        .step p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* ==============================
+           WHY SABMERO
+        ============================== */
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .why-card {
+            padding: 27px;
+            border-radius: 15px;
+            background: #f7f9fc;
+        }
+
+        .why-card h3 {
+            color: #1A3C6E;
+            margin-bottom: 7px;
+        }
+
+        .why-card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* ==============================
+           VENDOR CTA
+        ============================== */
+
+        .vendor-section {
+            background: #1A3C6E;
+            color: white;
+        }
+
+        .vendor-content {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .vendor-content h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .vendor-content p {
+            color: #dbe6f2;
+            margin-bottom: 28px;
+            font-size: 17px;
+        }
+
+        .vendor-button {
+            background: white;
+            color: #1A3C6E;
+        }
+
+        /* ==============================
+           APP DOWNLOAD
+        ============================== */
+
+        .app-section {
+            background: #f7f9fc;
+        }
+
+        .app-box {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            background: white;
+            border-radius: 22px;
+            padding: 55px 30px;
+            border: 1px solid #e8edf2;
+        }
+
+        .app-box h2 {
+            font-size: 38px;
+            color: #1A3C6E;
+            margin-bottom: 12px;
+        }
+
+        .app-box p {
+            color: #666;
+            max-width: 650px;
+            margin: 0 auto 25px;
+        }
+
+        .app-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            justify-content: center;
+        }
+
+        .play-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: #111;
+            color: white;
+            padding: 13px 23px;
+            border-radius: 10px;
+            font-weight: 700;
+        }
+
+        .play-button:hover {
+            background: #333;
+        }
+
+        .coming-soon-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: #e9edf2;
+            color: #888;
+            padding: 13px 23px;
+            border-radius: 10px;
+            font-weight: 700;
+            cursor: default;
+        }
+
+        /* ==============================
+           CONTACT
+        ============================== */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .contact-card {
+            text-align: center;
+            padding: 25px;
+            border: 1px solid #e8edf2;
+            border-radius: 15px;
+        }
+
+        .contact-card h3 {
+            color: #1A3C6E;
+            margin-bottom: 7px;
+        }
+
+        .contact-card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* ==============================
+           FOOTER
+        ============================== */
+
+        footer {
+            background: #2D2D2D;
+            color: white;
+            padding: 55px 0 25px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        .footer-brand h2 {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        .footer-brand p {
+            color: #c4c4c4;
+            font-size: 14px;
+            max-width: 340px;
+        }
+
+        footer h3 {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer li {
+            margin-bottom: 9px;
+        }
+
+        footer li a {
+            color: #c4c4c4;
+            font-size: 14px;
+        }
+
+        footer li a:hover {
+            color: white;
+        }
+
+        .copyright {
+            border-top: 1px solid #444;
+            margin-top: 40px;
+            padding-top: 20px;
+            text-align: center;
+            color: #aaa;
+            font-size: 13px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 12px;
+            margin-top: 18px;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 17px;
+            color: #fff;
+            transition: 0.2s;
+        }
+
+        .social-links a:hover {
+            background: #1A3C6E;
+            transform: translateY(-2px);
+        }
+
+        /* ==============================
+           MOBILE
+        ============================== */
+
+        @media (max-width: 900px) {
+
+            nav {
+                display: none;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .hero-content {
+                text-align: center;
+            }
+
+            .hero-content p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .category-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .service-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .contact-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .hero {
+                padding: 65px 0 55px;
+            }
+
+            .hero-content h1 {
+                font-size: 40px;
+            }
+
+            .hero-content p {
+                font-size: 16px;
+            }
+
+            .section-title {
+                font-size: 29px;
+            }
+
+            .category-grid,
+            .service-grid,
+            .steps,
+            .why-grid,
+            .contact-grid,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+            }
+
+            .app-box h2 {
+                font-size: 29px;
+            }
+
+            .vendor-content h2 {
+                font-size: 30px;
+            }
+
+            .navbar {
+                min-height: 64px;
+            }
+
+            .logo {
+                font-size: 22px;
+            }
+
+            .logo img {
+                width: 38px;
+                height: 38px;
+            }
+        }
+
+    </style>
+    <!-- Structured Data: LocalBusiness / Services -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "SabMero",
+      "image": "https://sabmero.com/logo.png",
+      "url": "https://sabmero.com/",
+      "email": "officialsabmero@gmail.com",
+      "description": "SabMero is an online marketplace for shopping and home services (CCTV, electrical, plumbing, networking, repair) in Kathmandu, Bhaktapur and Lalitpur, Nepal.",
+      "areaServed": [
+        { "@type": "City", "name": "Kathmandu" },
+        { "@type": "City", "name": "Bhaktapur" },
+        { "@type": "City", "name": "Lalitpur" }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/share/1CxLpqufpr/",
+        "https://www.instagram.com/sabmeronepal",
+        "https://youtube.com/@sabmeronepal",
+        "https://vm.tiktok.com/ZS9SXb8Pr8Ss3-4PrMP/"
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "CCTV Installation & Repair",
+            "areaServed": ["Kathmandu", "Bhaktapur", "Lalitpur"]
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Electrical Services",
+            "areaServed": ["Kathmandu", "Bhaktapur", "Lalitpur"]
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Plumbing Services",
+            "areaServed": ["Kathmandu", "Bhaktapur", "Lalitpur"]
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Networking Services",
+            "areaServed": ["Kathmandu", "Bhaktapur", "Lalitpur"]
+          }
+        }
+      ]
+    }
+    </script>
+
 </head>
+
 <body>
 
+<!-- ==============================
+     HEADER
+============================== -->
+
 <header>
-  <div class="logo">
-    <img src="logo.png" alt="SabMero logo">
-    SabMero
-  </div>
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#download">Download</a>
-  </nav>
+
+    <div class="container navbar">
+
+        <a href="#home" class="logo">
+
+            <img src="logo.png" alt="SabMero logo">
+
+            <span>SabMero</span>
+
+        </a>
+
+        <nav>
+
+            <a href="#home">Home</a>
+
+            <a href="#categories">Categories</a>
+
+            <a href="#services">Services</a>
+
+            <a href="#how-it-works">How It Works</a>
+
+            <a href="#contact">Contact</a>
+
+            <a
+                href="https://vendor.sabmero.com/"
+                class="nav-button"
+                target="_blank"
+                rel="noopener">
+                Become a Vendor
+            </a>
+
+        </nav>
+
+    </div>
+
 </header>
 
-<section class="hero">
-  <h1>Everything You Need.<br><span>One App.</span></h1>
-  <p>Nepal भरि shopping गर्नुहोस् र भरपर्दो home services (electrical, plumbing, CCTV, networking) एउटै app मा बुक गर्नुहोस्।</p>
-  <div class="cta-group">
-    <a href="https://play.google.com/store/apps/details?id=com.ecommerce.sabmeroapp" class="btn btn-primary">📲 Download SabMero</a>
-    <a href="#services" class="btn btn-secondary">Services हेर्नुहोस्</a>
-  </div>
+
+<!-- ==============================
+     HERO
+============================== -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-grid">
+
+        <div class="hero-content">
+
+            <h1>
+                Everything You Need.
+                <span>One App.</span>
+            </h1>
+
+            <p>
+                Shop products, discover local services,
+                and get everyday needs done with SabMero.
+                Now serving Kathmandu, Bhaktapur & Lalitpur —
+                more cities coming soon.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a
+                    href="https://play.google.com/store/apps/details?id=com.ecommerce.sabmeroapp"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-primary">
+
+                    Download SabMero
+
+                </a>
+
+                <a
+                    href="https://vendor.sabmero.com/"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-secondary">
+
+                    Become a Vendor
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="hero-card-title">
+                What can you do with SabMero?
+            </div>
+
+            <div class="quick-item">
+
+                <div class="quick-icon">
+                    🛍
+                </div>
+
+                <div>
+                    <strong>Shop Products</strong>
+                    <small>Discover products from local sellers.</small>
+                </div>
+
+            </div>
+
+            <div class="quick-item">
+
+                <div class="quick-icon">
+                    🛠
+                </div>
+
+                <div>
+                    <strong>Book Services</strong>
+                    <small>Find technicians and home services.</small>
+                </div>
+
+            </div>
+
+            <div class="quick-item">
+
+                <div class="quick-icon">
+                    📦
+                </div>
+
+                <div>
+                    <strong>Order Easily</strong>
+                    <small>Place orders and track your service.</small>
+                </div>
+
+            </div>
+
+            <div class="quick-item">
+
+                <div class="quick-icon">
+                    📱
+                </div>
+
+                <div>
+                    <strong>One App</strong>
+                    <small>Everything in one convenient place.</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
-<section id="services">
-  <h2 class="section-title">SabMero भित्र के-के छ?</h2>
-  <p class="section-sub">Shopping देखि घर/अफिसको सम्पूर्ण सेवा — एउटै ठाउँमा</p>
-  <div class="grid">
-    <div class="card">
-      <div class="emoji">🛍️</div>
-      <h3>Online Shopping</h3>
-      <p>दैनिक उपभोग्य वस्तुदेखि electronics सम्म — घरैमा डेलिभरी।</p>
+
+<!-- ==============================
+     INTRO
+============================== -->
+
+<section class="section intro">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Welcome to SabMero
+        </h2>
+
+        <p class="intro-text">
+
+            SabMero is an all-in-one digital marketplace
+            connecting customers with products, local sellers
+            and useful home services through one simple platform.
+
+        </p>
+
     </div>
-    <div class="card">
-      <div class="emoji">⚡</div>
-      <h3>Electrical Services</h3>
-      <p>Wiring, repair, installation — trusted technician बाट।</p>
-    </div>
-    <div class="card">
-      <div class="emoji">🔧</div>
-      <h3>Plumbing</h3>
-      <p>Leak fix, pipe installation, bathroom fitting सेवाहरू।</p>
-    </div>
-    <div class="card">
-      <div class="emoji">📹</div>
-      <h3>CCTV & Security</h3>
-      <p>Installation, setup, र maintenance — घर र व्यवसायको लागि।</p>
-    </div>
-  </div>
+
 </section>
 
-<section style="background:var(--white);">
-  <h2 class="section-title">किन SabMero?</h2>
-  <p class="section-sub">एउटा app, धेरै सुविधा</p>
-  <div class="why-list">
-    <div class="why-item"><span class="check">✓</span> Verified Vendors</div>
-    <div class="why-item"><span class="check">✓</span> Affordable Pricing</div>
-    <div class="why-item"><span class="check">✓</span> Fast Delivery</div>
-    <div class="why-item"><span class="check">✓</span> Trusted Technicians</div>
-    <div class="why-item"><span class="check">✓</span> Secure Payment</div>
-    <div class="why-item"><span class="check">✓</span> Customer Support</div>
-  </div>
+
+<!-- ==============================
+     CATEGORIES
+============================== -->
+
+<section class="section" id="categories">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Explore Categories
+        </h2>
+
+        <p class="section-subtitle">
+            Discover products and services for your everyday needs.
+        </p>
+
+
+        <div class="category-grid">
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    🛒
+                </div>
+
+                <h3>Shopping</h3>
+
+                <p>
+                    Explore products from local sellers.
+                </p>
+
+            </div>
+
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    📷
+                </div>
+
+                <h3>CCTV & Security</h3>
+
+                <p>
+                    Installation, repair and security solutions.
+                </p>
+
+            </div>
+
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    ⚡
+                </div>
+
+                <h3>Electrical</h3>
+
+                <p>
+                    Electrical products and services.
+                </p>
+
+            </div>
+
+
+            <div class="category-card">
+
+                <div class="category-icon">
+                    🔧
+                </div>
+
+                <h3>Home Services</h3>
+
+                <p>
+                    Connect with useful local technicians.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
-<div class="download-band" id="download">
-  <h2>अहिले नै Download गर्नुहोस्</h2>
-  <p>Shop गर्नुहोस्। Services बुक गर्नुहोस्। सबै एउटै app मा।</p>
-  <div class="cta-group">
-    <a href="https://play.google.com/store/apps/details?id=com.ecommerce.sabmeroapp" class="btn btn-primary">▶ Google Play</a>
-    <span class="btn btn-secondary" style="opacity:0.85;cursor:default;">🍎 App Store — Coming Soon!</span>
-  </div>
-</div>
+
+<!-- ==============================
+     SERVICES
+============================== -->
+
+<section class="section services" id="services">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Popular Services
+        </h2>
+
+        <p class="section-subtitle">
+            Currently serving Kathmandu, Bhaktapur & Lalitpur — coming soon to other cities across Nepal.
+        </p>
+
+
+        <div class="service-grid">
+
+            <div class="service-card">
+
+                <h3>CCTV Installation & Repair</h3>
+
+                <p>
+                    CCTV installation, configuration,
+                    troubleshooting and repair in Kathmandu,
+                    Bhaktapur and Lalitpur.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <h3>Electrical Services</h3>
+
+                <p>
+                    Trusted electricians for wiring, installation,
+                    maintenance and repair across Kathmandu Valley
+                    (Kathmandu, Bhaktapur, Lalitpur).
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <h3>Plumbing</h3>
+
+                <p>
+                    Connect with local plumbers for home and
+                    business needs in Kathmandu, Bhaktapur
+                    and Lalitpur.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <h3>Networking</h3>
+
+                <p>
+                    Networking, Wi-Fi, LAN setup and related
+                    technical services in Kathmandu Valley.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <h3>Repair & Maintenance</h3>
+
+                <p>
+                    Find technicians for useful repair
+                    and maintenance services in Kathmandu,
+                    Bhaktapur and Lalitpur.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <h3>More Cities — Coming Soon</h3>
+
+                <p>
+                    SabMero is expanding beyond Kathmandu Valley.
+                    More cities across Nepal coming soon.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==============================
+     HOW IT WORKS
+============================== -->
+
+<section class="section" id="how-it-works">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            How SabMero Works
+        </h2>
+
+        <p class="section-subtitle">
+            Simple steps to shop products or book services.
+        </p>
+
+
+        <div class="steps">
+
+            <div class="step">
+
+                <div class="step-number">
+                    1
+                </div>
+
+                <h3>Explore</h3>
+
+                <p>
+                    Find products and services available
+                    through SabMero.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    2
+                </div>
+
+                <h3>Choose</h3>
+
+                <p>
+                    Check products, services, prices
+                    and available options.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    3
+                </div>
+
+                <h3>Order or Book</h3>
+
+                <p>
+                    Place your order or book the service
+                    you need.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    4
+                </div>
+
+                <h3>Get It Done</h3>
+
+                <p>
+                    Receive your product or get the
+                    service at your location.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==============================
+     WHY SABMERO
+============================== -->
+
+<section class="section" id="why">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Why SabMero?
+        </h2>
+
+        <p class="section-subtitle">
+            Built to make everyday shopping and services simpler.
+        </p>
+
+
+        <div class="why-grid">
+
+            <div class="why-card">
+
+                <h3>One Platform</h3>
+
+                <p>
+                    Shop products and discover services
+                    from one convenient platform.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <h3>Local Businesses</h3>
+
+                <p>
+                    Connect customers with local sellers,
+                    businesses and service providers.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <h3>Easy to Use</h3>
+
+                <p>
+                    Designed to make finding products
+                    and services simple.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <h3>Secure Payments</h3>
+
+                <p>
+                    Use available payment options
+                    provided through the platform.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <h3>Customer Support</h3>
+
+                <p>
+                    Get help when you need assistance
+                    with your order or service.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <h3>Made for Kathmandu Valley</h3>
+
+                <p>
+                    Currently serving Kathmandu, Bhaktapur and
+                    Lalitpur — expanding to more cities in Nepal soon.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==============================
+     VENDOR
+============================== -->
+
+<section class="section vendor-section">
+
+    <div class="container vendor-content">
+
+        <h2>
+            Grow Your Business with SabMero
+        </h2>
+
+        <p>
+            Sell your products or offer your services
+            and connect with customers through SabMero.
+        </p>
+
+        <a
+            href="https://vendor.sabmero.com/"
+            target="_blank"
+            rel="noopener"
+            class="btn vendor-button">
+
+            Become a Vendor
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ==============================
+     APP DOWNLOAD
+============================== -->
+
+<section class="section app-section">
+
+    <div class="container">
+
+        <div class="app-box">
+
+            <h2>
+                Everything You Need. One App.
+            </h2>
+
+            <p>
+                Shop products, book services and connect
+                with local businesses through SabMero.
+                Download the app and get started.
+            </p>
+
+            <div class="app-buttons">
+
+                <a
+                    href="https://play.google.com/store/apps/details?id=com.ecommerce.sabmeroapp"
+                    target="_blank"
+                    rel="noopener"
+                    class="play-button">
+
+                    ▶
+                    Download on Google Play
+
+                </a>
+
+                <span class="coming-soon-button">
+                    🍎
+                    App Store — Coming Soon!
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==============================
+     CONTACT
+============================== -->
+
+<section class="section" id="contact">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Need Help?
+        </h2>
+
+        <p class="section-subtitle">
+            We're here to help you with SabMero.
+        </p>
+
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+
+                <h3>WhatsApp Support</h3>
+
+                <p>
+                    <a href="https://wa.me/9779747737597" target="_blank" rel="noopener" style="color:#1A3C6E;font-weight:600;">+977 974-7737597</a>
+                </p>
+
+            </div>
+
+            <div class="contact-card">
+
+                <h3>Email Support</h3>
+
+                <p>
+                    officialsabmero@gmail.com
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <h3>Vendor Support</h3>
+
+                <p>
+                    Visit the Vendor Portal
+                    to manage your business.
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <h3>Download the App</h3>
+
+                <p>
+                    Get SabMero from Google Play
+                    and start exploring.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==============================
+     FOOTER
+============================== -->
 
 <footer>
-  <div class="logo">
-    <img src="logo.png" alt="SabMero logo">
-    SabMero
-  </div>
-  <p>Everything You Need. One App.</p>
-  <p style="margin-top:14px;">पसल/सेवा दिन चाहनुहुन्छ? <a href="https://vendor.sabmero.com" style="color:var(--orange);font-weight:600;">Vendor भएर जोडिनुहोस् →</a></p>
-  <p style="margin-top:10px;">© 2026 SabMero. All rights reserved.</p>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+
+            <!-- BRAND -->
+
+            <div class="footer-brand">
+
+                <div class="logo" style="margin-bottom:14px;">
+                    <img src="logo.png" alt="SabMero logo">
+                    <span>SabMero</span>
+                </div>
+
+                <p>
+                    Everything You Need. One App.
+                    Shop products, discover services
+                    and connect with local businesses.
+                </p>
+
+                <div class="social-links">
+
+                    <a href="https://wa.me/9779747737597" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+                    <a href="https://www.facebook.com/share/1CxLpqufpr/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="https://www.instagram.com/sabmeronepal" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+
+                    <a href="https://youtube.com/@sabmeronepal" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+
+                    <a href="https://vm.tiktok.com/ZS9SXb8Pr8Ss3-4PrMP/" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+
+                </div>
+
+            </div>
+
+
+            <!-- COMPANY -->
+
+            <div>
+
+                <h3>Company</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#home">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#why">
+                            About SabMero
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- SERVICES -->
+
+            <div>
+
+                <h3>Explore</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#categories">
+                            Categories
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#services">
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#how-it-works">
+                            How It Works
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- LINKS -->
+
+            <div>
+
+                <h3>Important</h3>
+
+                <ul>
+
+                    <li>
+                        <a
+                            href="https://vendor.sabmero.com/"
+                            target="_blank"
+                            rel="noopener">
+
+                            Become a Vendor
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="privacy-policy.html">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="terms.html">
+                            Terms & Conditions
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://play.google.com/store/apps/details?id=com.ecommerce.sabmeroapp"
+                            target="_blank"
+                            rel="noopener">
+
+                            Download App
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 SabMero. All rights reserved.
+
+        </div>
+
+    </div>
+
 </footer>
+
 
 </body>
 </html>
